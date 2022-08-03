@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="header_title">SPLI <br> TTER</h1>
+    </header>
+
+    <section class="calculator-container">
+      <div class="inputs-section">
+        <label for="bill" class="inputs-section_bill-label">Bill</label>
+        <input class="inputs-section_bill-input" type="number" name="bill" id="bill" value="0">
+
+        <fieldset class="btns">
+          <legend class="btns_legend">Select Tip %</legend>
+          <button class="btns_buton btns_buton--selected">5%</button>
+          <button class="btns_buton">10%</button>
+          <button class="btns_buton">15%</button>
+          <button class="btns_buton">25%</button>
+          <button class="btns_buton">50%</button>
+          <input type="number" placeholder="Custom">
+        </fieldset>
+
+        <label for="people" class="inputs-section_people-label">Number of People</label>
+        <input class="inputs-section_people-input" type="number" name="people" id="people" value="5">
+      </div>
+      <div class="result-section">
+        <div class="results">
+          <div>
+            <p class="results_tip-amount">Tip Amount</p>
+            <p class="results_tip-person">/ person</p>
+          </div>
+          <p class="results_tip-value">0</p>
+          <div>
+            <p class="results_total-amount">Total</p>
+            <p class="results_total-person">/ person</p>
+          </div>
+          <p class="results_total-value">0</p>
+        </div>
+        <button>Reset</button>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/OrmazaAlvarez" target="_blank">Lenin Ormaza</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+
+</html>
